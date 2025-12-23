@@ -55,8 +55,7 @@
       font-size: clamp(22px, 4.6vw, 38px);
       line-height: 1.15;
     }
-
-    /* Section centrée et alignée horizontalement (titre + grille même largeur) */
+    
     .apps-section{
       width: min(620px, 100%);
       margin-inline: auto;
@@ -73,7 +72,7 @@
 
     .apps-grid{
       width: 100%;
-      margin-inline: auto; /* correction : centre bien la grille */
+      margin-inline: auto;
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 12px;
@@ -155,7 +154,6 @@
       -webkit-box-orient: vertical;
     }
 
-    /* Placeholders: remplis gris, aucun texte, reflet traversant */
     .app-btn.placeholder{
       border-color: rgba(51, 65, 85, 0.85);
       background: linear-gradient(180deg, var(--skeleton-2), var(--skeleton));
@@ -205,14 +203,13 @@
 <body>
   <main class="page" role="main" aria-label="evoSuite">
     <header>
-      <h1>evoSuite est en cours de développement 🚧</h1>
+      <h1>evoSuite est en cours de développement 🚧 En attendant, voici nos autres travaux :</h1>
     </header>
 
     <section class="apps-section" aria-label="Mes applications">
       <div class="section-title">Mes applications</div>
 
       <div class="apps-grid">
-        <!-- Ligne 1, Colonne 1 -->
         <a
           class="app-btn"
           href="https://evomoyenne.qzz.io"
@@ -225,15 +222,13 @@
             <span class="app-name">evoMoyenne</span>
             <span class="app-desc">Calculateur de moyenne</span>
           </span>
-        </a>
-
-        <!-- Ligne 1, Colonne 2 -->
+        
         <div class="app-btn placeholder" aria-hidden="true"></div>
 
-        <!-- Ligne 2, Colonne 1 -->
+        
         <div class="app-btn placeholder" aria-hidden="true"></div>
 
-        <!-- Ligne 2, Colonne 2 -->
+        
         <div class="app-btn placeholder" aria-hidden="true"></div>
       </div>
     </section>
